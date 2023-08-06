@@ -1,0 +1,434 @@
+.btn {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
+
+.btn-register {
+  border: 1px solid #42eb00;
+  color: #fff;
+}
+
+.projects-container h1, main h1 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+main .cards-container .services-card:hover {
+  transform: translate(0, -10px);
+  box-shadow: 0 3px 3px #42eb00;
+}
+
+.projects-container .projects-lists .other-projects-container .other-project, .projects-container .projects-lists .first-project {
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-container .projects-lists .other-projects-container .other-project .project-card-cover, .projects-container .projects-lists .first-project .project-card-cover, .projects-container .projects-lists .other-projects-container .other-project .project-card-title, .projects-container .projects-lists .first-project .project-card-title, .projects-container .projects-lists .other-projects-container .other-project .project-card-text, .projects-container .projects-lists .first-project .project-card-text {
+  opacity: 0;
+}
+@media (max-width: 740px) {
+  .projects-container .projects-lists .other-projects-container .other-project .project-card-cover, .projects-container .projects-lists .first-project .project-card-cover, .projects-container .projects-lists .other-projects-container .other-project .project-card-title, .projects-container .projects-lists .first-project .project-card-title, .projects-container .projects-lists .other-projects-container .other-project .project-card-text, .projects-container .projects-lists .first-project .project-card-text {
+    opacity: 1;
+  }
+}
+.projects-container .projects-lists .other-projects-container .other-project:hover .project-card-cover, .projects-container .projects-lists .first-project:hover .project-card-cover, .projects-container .projects-lists .other-projects-container .other-project:hover .project-card-title, .projects-container .projects-lists .first-project:hover .project-card-title, .projects-container .projects-lists .other-projects-container .other-project:hover .project-card-text, .projects-container .projects-lists .first-project:hover .project-card-text {
+  opacity: 1;
+}
+
+.btn {
+  font-weight: bold;
+  color: #cdcdcd;
+  padding: 0.7rem 1rem;
+  transition: 0.3s;
+}
+.btn-logIn {
+  background-color: #42eb00;
+  color: #fff;
+  border: 1px solid #134400;
+}
+.btn-logIn:hover {
+  background-color: #026d00;
+  border: 1px solid #42eb00;
+  box-shadow: 0 3px 1px #42eb00;
+}
+.btn-register:hover {
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 3px 1px #cdcdcd;
+  background-color: rgba(96, 96, 96, 0.2862745098);
+}
+.btn-check {
+  padding: 1.5rem;
+  background: #42eb00;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+.btn-check:hover {
+  box-shadow: 0 5px 5px #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Helvetica", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header area */
+#banner-area {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/background.jpg") center;
+  height: 100vh;
+  background-size: cover;
+}
+@media (max-width: 740px) {
+  #banner-area nav {
+    display: none;
+  }
+}
+#banner-area .nav-content {
+  background-color: rgba(0, 0, 0, 0.9568627451);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 2rem;
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+@media (max-width: 740px) {
+  #banner-area .nav-content {
+    padding: 1rem;
+  }
+}
+#banner-area .nav-content .markbrand {
+  color: #42eb00;
+  font-size: 2rem;
+  position: relative;
+  padding: 0 10px;
+}
+#banner-area .nav-content .markbrand::after {
+  content: "";
+  position: absolute;
+  background-color: #42eb00;
+  height: 2px;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+#banner-area .nav-content .markbrand:hover {
+  color: #fff;
+}
+#banner-area .nav-content .markbrand:hover::after {
+  width: 100%;
+}
+#banner-area .nav-content-navbar {
+  display: flex;
+}
+#banner-area .nav-content-navbar li {
+  margin: 0 1rem;
+}
+#banner-area .nav-content-navbar li a.link {
+  color: #cdcdcd;
+  font-size: 1.1em;
+  position: relative;
+  padding: 0 10px;
+}
+#banner-area .nav-content-navbar li a.link::after {
+  content: "";
+  position: absolute;
+  background-color: #42eb00;
+  height: 2px;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+#banner-area .nav-content-navbar li a.link:hover {
+  color: #fff;
+}
+#banner-area .nav-content-navbar li a.link:hover::after {
+  width: 100%;
+}
+#banner-area .nav-content .fa-solid.fa-bars {
+  color: #fff;
+  font-size: 1.5em;
+  display: none;
+}
+@media (max-width: 740px) {
+  #banner-area .nav-content .fa-solid.fa-bars {
+    display: block;
+  }
+}
+#banner-area .main-title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+@media (max-width: 740px) {
+  #banner-area .main-title {
+    text-align: center;
+  }
+}
+#banner-area .main-title h2 {
+  color: #42eb00;
+  font-size: 4em;
+  letter-spacing: 1px;
+}
+@media (max-width: 740px) {
+  #banner-area .main-title {
+    font-size: 1.6em;
+  }
+}
+#banner-area .main-title-btn {
+  color: white;
+  font-size: 1.3em;
+  padding: 1rem 2rem;
+  border: 1px solid #42eb00;
+  border-radius: 2rem;
+  background-color: rgba(4, 238, 0, 0.1764705882);
+  transition: 0.3s;
+}
+#banner-area .main-title-btn:hover {
+  box-shadow: 0 5px 5px rgba(4, 238, 0, 0.1764705882);
+}
+#banner-area .main-title-btn:active {
+  background-color: rgba(84, 84, 84, 0.3333333333);
+  border: 1px solid #d3d3d3;
+  box-shadow: 0 3px 3px #d3d3d3;
+}
+
+/* Main area */
+main {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+main .cards-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+@media (max-width: 740px) {
+  main .cards-container {
+    padding: 2rem;
+  }
+}
+main .cards-container .services-card {
+  width: 30%;
+  border: 1px solid #d3d3d3;
+  padding: 2rem;
+  margin: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 740px) {
+  main .cards-container .services-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+main .cards-container .services-card i {
+  font-size: 3rem;
+  color: #42eb00;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+main .cards-container .services-card h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+main .cards-container .services-card p {
+  color: #5e5e5e;
+}
+.projects-container {
+  background: #e9fce5;
+  padding: 2rem;
+}
+.projects-container .projects-lists {
+  display: flex;
+  padding: 2rem 0;
+}
+@media (max-width: 740px) {
+  .projects-container .projects-lists {
+    flex-direction: column;
+  }
+}
+.projects-container .projects-lists .first-project {
+  width: 30%;
+  height: 34.4rem;
+  margin: 0 2%;
+  background-image: url("../assets/snowboarding.jpg");
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 740px) {
+  .projects-container .projects-lists .first-project {
+    width: 100%;
+    height: 13.3rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+.projects-container .projects-lists .other-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+  cursor: pointer;
+}
+@media (max-width: 740px) {
+  .projects-container .projects-lists .other-projects-container {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.projects-container .projects-lists .other-projects-container .other-project {
+  width: 46%;
+  height: 250px;
+  position: relative;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 740px) {
+  .projects-container .projects-lists .other-projects-container .other-project {
+    width: 100%;
+    height: 13.3rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}
+.projects-container .projects-lists .other-projects-container #pic-2 {
+  background-image: url("../assets/sport2.jpg");
+}
+.projects-container .projects-lists .other-projects-container #pic-3 {
+  background-image: url("../assets/sport3.jpg");
+}
+.projects-container .projects-lists .other-projects-container #pic-4 {
+  background-image: url("../assets/sport4.jpg");
+}
+.projects-container .projects-lists .other-projects-container #pic-5 {
+  background-image: url("../assets/sport5.jpg");
+}
+.projects-container .projects-lists .project-card-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.6196078431);
+  border: 3px solid #42eb00;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: 0 3px 3px rgba(23, 23, 23, 0.6235294118);
+}
+.projects-container .projects-lists .project-card-cover .project-card-title {
+  font-size: 1.5rem;
+}
+.projects-container .projects-lists .project-card-cover .project-card-text {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Footer area */
+footer {
+  background-color: #111111;
+  color: #fff;
+  padding: 5rem 2rem;
+}
+@media (max-width: 740px) {
+  footer {
+    text-align: center;
+  }
+}
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 740px) {
+  footer .footer-content {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+footer .footer-content .footer-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+@media (max-width: 740px) {
+  footer .footer-content .footer-title {
+    font-size: 3em;
+  }
+}
+footer .footer-description, footer .footer-links {
+  width: 50%;
+}
+@media (max-width: 740px) {
+  footer .footer-description, footer .footer-links {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+footer .footer-description p {
+  width: 80%;
+}
+@media (max-width: 740px) {
+  footer .footer-description p {
+    width: 100%;
+  }
+}
+footer .footer-links {
+  display: flex;
+  color: #fff;
+}
+@media (max-width: 740px) {
+  footer .footer-links {
+    flex-direction: column;
+  }
+}
+footer .footer-links-container {
+  padding: 0 1.5rem;
+}
+footer .footer-links ul {
+  margin-bottom: 2rem;
+}
+footer .footer-links ul li {
+  margin-bottom: 1rem;
+}
+footer .footer-links ul li a {
+  color: #d3d3d3;
+  transition: 0.3s;
+}
+footer .footer-links ul li a:hover {
+  color: #00ff5e;
+}
+footer .footer-copyright {
+  margin-top: 2rem;
+}
+footer .footer-copyright p {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
